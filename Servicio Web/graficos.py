@@ -6,7 +6,7 @@ from conexion_insertar import Transacciones
 def grafico_precios(nombre_moneda, simbolo , fecha, precios, prediccion ):
     #Graficas con pygal 
     #Definimos un grafico de linea, a este le pasamos la altura x el ancho y la asignación de la leyenda | para este caso la leyenda queda en la parte inferior cemtrada
-    line_chart = pygal.Line(width = 600, height = 280, legend_at_bottom=True)
+    line_chart = pygal.Line(width = 850, height = 450, legend_at_bottom=True)
     
     #Titulo del grafico    - - - - #EURO \u20ac
     line_chart.title = f'PRECIO ACTUAL DEL {nombre_moneda.upper()} {simbolo}{precios[-1]} - LA PREDICCIÓN ESTA EN: {simbolo}{prediccion[-1]}'

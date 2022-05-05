@@ -6,7 +6,7 @@ import sys
 class Conexion:
     _DATABASE = 'moneda'
     _USERNAME = 'root'
-    _PASSWORD = 'prob@nd0'
+    _PASSWORD = 'Prob@ando'
     _DB_PORT = '3306'
     _HOST = '127.0.0.1'
     _MAX_CON = 5
