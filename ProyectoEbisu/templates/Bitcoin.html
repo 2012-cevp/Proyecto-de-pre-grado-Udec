@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ebisu</title>
+    <link rel="icon" href="..\static\images\NicePng_toro-logo-png_1774474.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\static\css\Bitcoin.css">
+    <title>Bitcoin</title>
+
+</head>
+<body>
+    
+<div id="pagina">
+        <!--Seccion navbar-->
+        <div class="dropdown">
+            <nav>
+                <img class="toro" src="..\static\images\NicePng_toro-logo-png_1774474.png"></li>
+                <a href="{{url_for('home')}}" class="titulo">Ebisu</a>
+                <ul>
+                    
+                    <li><a href="#">About</a>
+                         <ul>
+                            <li><a href="{{url_for('aboutus')}}">About us</a></li> 
+                            <li><a href="{{url_for('aboutpro')}}">About the project</a></li>
+                            <li><a href="{{url_for('contactus')}}">Contact us</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    <!-- Cuerpo pagina -->
+    <div class="caja2">
+        <div class="otrodiv"> 
+        <img src="..\static\images\Bitcoin.png" alt="imagen del bitcoin"  width="30" height="30"> <strong>Bitcoin</strong>
+        </div>
+        
+        <div class="text1-precio">
+        <p>Precio del Bitcoin(BTC)</p>
+        <p>{{precio}}</p>
+        </div>
+        <div class="text1-precio">
+        <p>Precio estimado del Bitcoin (BTC)</p>
+        <p>{{prediccion}}</p>
+        </div>
+        <div class="text1-precio">
+            <p>Precio estimado del Bitcoin (BTC) Siguiente hora</p>
+            <p>{{prediccion_sig}}</p>
+            </div>
+        </div>
+        <hr/>
+
+    <div class="caja">
+    <div class="grafica">
+        <figure>
+            <embed type="image/svg+xml" src="{{image_url}}" />
+          </figure>
+    </div>
+    <div class="twi">
+        
+        <!-- <blockquote width= "350px"height= "500px"class="twitter-tweet"><p lang="es" dir="ltr">Los desarrolladores de Telegram viendo como hicieron una app superior a WhatsApp en todo sentido solo para que la gente la use para pasarse porno <a href="https://t.co/qqOROk76a0">pic.twitter.com/qqOROk76a0</a></p>&mdash; santy 💀🔨 (@cyberfunk77) <a href="https://twitter.com/cyberfunk77/status/1520545050161254402?ref_src=twsrc%5Etfw">April 30, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     -->
+     <a class="twitter-timeline" href="https://twitter.com/Bitcoin?ref_src=twsrc%5Etfw">Tweets by Bitcoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+</div>
+     <!--Footboard-->
+     <div id="pie">
+        <div class="item1"> ©2022 Ebisu</div>
+        <div class="item2"><img class="icon" src="..\static\images\Jijub.png" alt="Github-icon" width=50px><a href="https://github.com/2012-cevp/Proyecto-de-pre-grado-Udec"
+            target="_blank">Github</a>
+        </div>
+       
+    </div>
+
+
+</body>
+</html>

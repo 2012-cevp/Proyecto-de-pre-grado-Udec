@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ebisu</title>
+    <link rel="icon" href="..\static\images\NicePng_toro-logo-png_1774474.png">
+    <link rel="stylesheet" href="..\static\css\Estilo_index.css">
+
+</head>
+<body>
+    <div id="pagina">
+    <!--Seccion navbar-->
+    <div class="dropdown">
+        <nav>
+            <img class="toro" src="..\static\images\NicePng_toro-logo-png_1774474.png"></li>
+            <a href="{{url_for('home')}}" class="titulo">Ebisu</a>
+            <ul>
+                
+                <li><a href="#">About</a>
+                     <ul>
+                        <li><a href="{{url_for('aboutus')}}">About us</a></li> 
+                        <li><a href="{{url_for('aboutpro')}}">About the project</a></li>
+                        <li><a href="{{url_for('contactus')}}">Contact us</a></li> 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+ <!--Seccion Tabla-->
+ <div id="contenido"> 
+    
+        <section >
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Prediccion</th>
+                
+                
+            </tr>
+            <tr>
+                <th>1</th>
+                            <!-- {{url_for('bitcoin')}} -->
+                <th><a href="{{url_for('bitcoin')}}"> <img src="..\static\images\Bitcoin.png"  width="30" height="30"> Bitcoin</a></th>
+
+                <th>{{precio_btc}}</th>
+                <th>{{prediccion_btc}}</th>
+
+                
+                
+            </tr>
+
+            <tr>
+                <th>2</th>
+                    <!-- {{url_for('dolar')}} -->
+                <th><a href="{{url_for('dolar')}}"><img src="..\static\images\dollar_icon.png"  width="30" height="30"> Dolar </a></th>
+
+                <th>{{precio_usd}}</th>
+                <th>{{prediccion_usd}}</th>
+
+                
+                
+            </tr>
+
+            <tr>
+                <th>3</th>
+                        <!-- {{url_for('euro')}} -->
+                <th><a href="{{url_for('euro')}}"> <img src="..\static\images\euro_icon.png"  width="30" weight="30"> Euro </a></th>
+
+                <th>{{precio_eur}}</th>
+                <th>{{prediccion_eur}}</th>
+
+                
+                
+            </tr>
+        </table>
+    </section>
+
+</div>
+    
+    <!--Footboard-->
+    <div id="pie">
+        <div class="item1"> ©2022 Ebisu</div>
+        <div class="item2"><img class="icon" src="..\static\images\Jijub.png" alt="Github-icon" width=50px><a href="https://github.com/2012-cevp/Proyecto-de-pre-grado-Udec"
+            target="_blank">Github</a>
+        </div>
+       
+    </div>
+        
+    </div>
+    
+</body>
+</html>

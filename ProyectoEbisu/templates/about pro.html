@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ebisu</title>
+    <link rel="icon" href="..\static\images\NicePng_toro-logo-png_1774474.png">
+    <link rel="stylesheet" href="..\static\css\estilo_aboutpro.css">
+</head>
+<!-- Seccion navbar -->
+<body>
+    <div id="pagina">
+    <div class="dropdown">
+        <nav>
+            <img class="toro" src="..\static\images\NicePng_toro-logo-png_1774474.png"></li>
+            <a href="{{url_for('home')}}" class="titulo">Ebisu</a>
+            <ul>
+                
+                <li><a href="#">About</a>
+                     <ul>
+                        <li><a href="{{url_for('aboutus')}}">About us</a></li> 
+                        <li><a href="{{url_for('aboutpro')}}">About the project</a></li>
+                        <li><a href="{{url_for('contactus')}}">Contact us</a></li> 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contenido">    
+    
+  <div >
+    <h1>Proyecto de pregrado</h1>
+    <hr>
+    <h2>Director</h2>
+    <p id="director">Gustavo Adolf Lanza Bayona</p>
+    <h2 id="ti">Estudiantes</h2>
+    <pre class="a">
+    <p class="estudiante">Oscar David Perilla Dominguez              Carlos Eduardo Villalba Perdomo </p>
+    </pre>
+    </div >
+    <div class="container">
+        <img class=" img  " src="..\static\images\Escudo_Universidad_de_Cundinamarca.png"> 
+    <p>
+        Actualmente el interés por la inversión en la bolsa de valores ha venido en aumento tanto a nivel nacional como internacional, 
+        ya que se ha venido planteando la idea de que es “fácil” realizar inversiones y a su vez obtener ganancias; 
+        pero esto está muy lejos de la realidad, ya que los mercados de divisas en general toman tendencias que no son fácilmente modelables a simple vista. 
+        En ese contexto, es importante entender la necesidad de una herramienta que apoye a los inversores, pero que trate de cometer los menos errores posibles. 
+        Teniendo en cuenta esto, cabe destacar que el presente proyecto plantea la realización de una herramienta que se enfoque en la estimación/predicción de 
+        los diversos precios que se pueden tomar tanto para el euro, el bitcoin y el dólar; 
+        esto se realiza a través de algoritmos de aprendizaje automático, empleando arquitecturas como lo son el LSTM (Long Short Term Memory), 
+        GRU(Gated Recurrent Unit),  TCN (Temporal Convolutional Networks), ARIMA (Modelo Autorregresivo Integrado de Medias Móviles) y 
+        una combinación de capas recurrentes LSTM y unidades recurrentes GRU. A través de diversas métricas de evaluación y de una metodología previamente seleccionada y 
+        enfocada en los algoritmos de machine Learning, se procede a realizar una clasificación de los mejores modelos y que a su vez tenga los resultados óptimos, 
+        recordando que cada selección se hace en base a cada moneda que se describe; y para esto se encontró que los modelos ajustados a cada moneda son.  
+    </p>
+    <ul>
+        <li><p>Para el dólar un modelo ARIMA (4,1,2) con un RMSE (Raíz del Error Cuadrático Medio) de 28.24 con un error porcentual de 0.62%. </p> </li>
+          
+       <li> <p>Para el euro un modelo GRU con un RMSE de 31.85 y un error porcentual de 0.57%.</p></li>
+
+        <li><p>Para el bitcoin un modelo LSTM con un RMSE de 367.72 y un error porcentual de 0.63% </p></li>
+    </ul>
+    
+  </div>
+</div>
+  
+  <!--Footboard-->
+  <div id="pie">
+    <div class="item1"> ©2022 Ebisu</div>
+    <div class="item2"><img class="icon" src="..\static\images\Jijub.png" alt="Github-icon" width=50px><a href="https://github.com/2012-cevp/Proyecto-de-pre-grado-Udec"
+        target="_blank">Github</a>
+    </div>
+   
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ebisu</title>
+    <link rel="icon" href="..\static\images\NicePng_toro-logo-png_1774474.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\static\css\estilo_euro.css">
+    <title>Bitcoin</title>
+
+</head>
+<body>
+    
+<div id="pagina">
+        <!--Seccion navbar-->
+        <div class="dropdown">
+            <nav>
+                <img class="toro" src="..\static\images\NicePng_toro-logo-png_1774474.png"></li>
+                <a href="{{url_for('home')}}" class="titulo">Ebisu</a>
+                <ul>
+                    
+                    <li><a href="#">About</a>
+                         <ul>
+                            <li><a href="{{url_for('aboutus')}}">About us</a></li> 
+                            <li><a href="{{url_for('aboutpro')}}">About the project</a></li>
+                            <li><a href="{{url_for('contactus')}}">Contact us</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <!-- Cuerpo pagina -->
+    <div class="caja2">
+        <div class="otrodiv"> 
+        <img src="..\static\images\euro_icon.png" alt="imagen del euro"  width="30" height="30"> <strong>Euro</strong>
+        </div>
+        
+        <div class="text1-precio">
+        <p>Precio del Euro (EUR)</p>
+        <p>{{precio}}</p>
+        </div>
+        <div class="text1-precio">
+        <p>Precio estimado del Euro (EUR)</p>
+        <p>{{prediccion}}</p>
+        </div>
+        <div class="text1-precio">
+            <p>Precio estimado del Euro (EUR) Siguiente hora</p>
+            <p>{{prediccion_sig}}</p>
+            </div>
+        </div>
+        <hr/>
+    <div class="caja">
+    <div class="grafica">
+        <figure>
+            <embed type="image/svg+xml" src="{{image_url2}}" />
+          </figure>
+    </div>
+    <div class="twi">
+        
+        <a class="twitter-timeline" href="https://twitter.com/InvestingEspana?ref_src=twsrc%5Etfw">Tweets by InvestingEspana</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+</div>
+     <!--Footboard-->
+     <div id="pie">
+        <div class="item1"> ©2022 Ebisu</div>
+        <div class="item2"><img class="icon" src="..\static\images\Jijub.png" alt="Github-icon" width=50px><a href="https://es.stackoverflow.com/questions/25743/cómo-crear-un-footer-que-se-adapte-en-la-parte-inferior">Github</a>
+        </div>
+       
+    </div>
+</div>
+
+</div>
+</body>
+</html>
