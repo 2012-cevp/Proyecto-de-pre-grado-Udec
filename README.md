@@ -20,7 +20,7 @@ Oscar David Perilla Domínguez
 Python 3.8.5
 MySQL 8.0
 Servidor en la nube 
-__Nota__: (La configuración esta lista para servidor como Heroku y Google Cloud (Véase la carpeta ProyectoEbisu))
+Nota: (La configuración esta lista para servidor como Heroku y Google Cloud (Véase la carpeta ProyectoEbisu))
 
 ```
 # Librerias Necesarias 📋
