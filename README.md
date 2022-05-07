@@ -90,3 +90,10 @@ Werkzeug==2.1.2
 wrapt==1.14.1
 zipp==3.8.0
 ```
+## Expresiones de Gratitud si deseas usar este repositorio 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Da las gracias públicamente 🤓.
+* Realiza una donación
+* etc.
