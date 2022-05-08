@@ -1,10 +1,10 @@
 # Información 🚀
-__Nombre: Desarrollo  de  prototipo web para la predicción del dólar estadounidense y el euro respecto al peso colombiano y Bitcoin respecto al dólar estadounidens eatravés de series temporales y técnicas de DeepLearning.__
+__Nombre: Desarrollo  de  prototipo web para la predicción del dólar estadounidense y el euro respecto al peso colombiano y Bitcoin respecto al dólar estadounidens eatravés de series temporales y técnicas de Deep Learning.__
 
-__Notas:__
+__Notas:
 Sientase libre de usar este repositorio para apoyarse, o bien para colaborarle a otros usuarios,
 no buscamos que alguien use este proyecto para beneficio propio y cobre por este.
-A su vez, puede colaborar con el desarrollo del mismo o bien hacer correcciones segun corresponda 
+A su vez, puede colaborar con el desarrollo del mismo o bien hacer correcciones segun corresponda __
 
 __Descripcion:__
 
