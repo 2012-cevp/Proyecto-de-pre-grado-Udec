@@ -3,8 +3,7 @@ __Nombre: Desarrollo  de  prototipo web para la predicción del dólar estadouni
 
 __Notas: Sientase libre de usar este repositorio para apoyarse, o bien para colaborarle a otros usuarios,
 no buscamos que alguien use este proyecto para beneficio propio y cobre por este.
-A su vez, puede colaborar con el desarrollo del mismo o bien hacer correcciones o actualizaciones segun corresponda
-RECUERDE TAMBIEN QUE SI USARA EL PROYECTO DEBERA DAR UN AGRADECIMIENTO DONDE USARA ESTE__
+A su vez, puede colaborar con el desarrollo del mismo o bien hacer correcciones o actualizaciones segun corresponda.__
 
 __Descripcion:__
 
