@@ -76,24 +76,16 @@ nav ul ul li{
 }
 
 /* Cuerpo de la pagina */
-#contenido {
-    padding-bottom:300px; /* este valor debe ser igual o mayor al alto del pie */
-    position: relative;
-  }
-  #pagina {
-    position: relative;
-    min-height: 100%;
-  }
-  #pagina {
-    position: relative;
-    min-height: 100%;
+#pagina {
+  position: relative;
+  min-height: 100%;
   }
 
-  .caja{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
+.caja{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+  flex-wrap: wrap;
      
   }
 .grafica{
@@ -101,9 +93,7 @@ nav ul ul li{
     margin-left: 30px;
     width:850px;
     height:450px;
-
-    text-align: center; 
-   
+      
   }
 
 .twi{
@@ -111,7 +101,6 @@ nav ul ul li{
     margin-left: 30px;
     height:450px;
     overflow: auto;
-    
 }
 .otrodiv{
   position:relative;
@@ -132,6 +121,14 @@ nav ul ul li{
 .text1-precio{
   font-family: 'Abel', sans-serif;    
     font-size: 18.5px;
+}
+#contenido {
+  padding-bottom:300px; /* este valor debe ser igual o mayor al alto del pie */
+  position: relative;
+}
+#pagina {
+  position: relative;
+  min-height: 100%;
 }
 
 

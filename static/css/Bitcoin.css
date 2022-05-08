@@ -77,16 +77,16 @@ nav ul ul li{
 
 /* Cuerpo de la pagina */
 
-  #pagina {
-    position: relative;
-    min-height: 100%;
+ #pagina {
+  position: relative;
+  min-height: 100%;
   }
 
-  .caja{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
+.caja{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+  flex-wrap: wrap;
      
   }
 .grafica{
@@ -110,19 +110,7 @@ nav ul ul li{
   font-family: 'Abel', sans-serif;    
     font-size: 27px;
 }
-/*
-.text1-precio{
-  display:inline-block;
-  margin-left: 36%;
-  font-family: 'Abel', sans-serif;    
-    font-size: 18.5px;
-}
-.text2-estimado{
-  display:inline-block;
-  margin-left: 20%;
-  font-family: 'Abel', sans-serif;    
-    font-size: 18.5px;
-} */
+
 .caja2{
   display: flex;
   flex-direction: row;
