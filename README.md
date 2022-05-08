@@ -5,7 +5,7 @@ __Notas: Sientase libre de usar este repositorio para apoyarse, o bien para cola
 no buscamos que alguien use este proyecto para beneficio propio y cobre por este.
 A su vez, puede colaborar con el desarrollo del mismo o bien hacer correcciones o actualizaciones segun corresponda.__
 
-__Descripcion: En este repositorio encontrará el desarrollo de un proyecto para realizar la predicción del euro y el dólar respecto al peso colombiano y el bitcoin con respecto al dólar estadunidense, mediante la aplicación de series temporales y redes neuronales_
+__Descripcion: En este repositorio encontrará el desarrollo de un proyecto para realizar la predicción del euro y el dólar respecto al peso colombiano y el bitcoin con respecto al dólar estadunidense, mediante la aplicación de series temporales y redes neuronales__
 
 # Autores ✒️
 
