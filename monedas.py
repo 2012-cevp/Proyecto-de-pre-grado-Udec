@@ -1,7 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
+
+url = "https://yfapi.net/v6/finance/quote"
+query_usd = {"symbols": "USDCOP=X"}
+query_eur = {"symbols":"EURCOP=X"}
+
+
+headers = {'x-api-key': "3murJ8zwSm4D4nklwZRi72y8J9JO7i2771GKsBJY"}
+
+
 class Monedas_Peticiones():
-    
+
     def precio_btc():
         url = 'https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=1'
         r = requests.get(url)
@@ -11,23 +20,19 @@ class Monedas_Peticiones():
         return precio_hora
 
     def precio_dolar():
-        url = "https://au.investing.com/currencies/usd-cop"
-        
-        # Ejecutar GET-Request - LA RESPUESTA DEBE SER 200 OK ó [200]
-        response = requests.get(url)
-        html = BeautifulSoup(response.text, 'html.parser')
-        #Precio del dolar
-        precio_usd = html.find('span', {'data-test':"instrument-price-last"}).get_text()
-        precio_usd = precio_usd.replace(',', '')
-        precio_usd = float(precio_usd)
+        response = requests.request("GET", url, headers=headers, params=query_usd)
+        json_response = response.json()
+        for i in json_response['quoteResponse']['result']:
+            precio_usd = i['regularMarketPrice']
         return precio_usd
 
     def precio_euro():
-        url = "https://au.investing.com/currencies/eur-cop"
-        response = requests.get(url)
-        html = BeautifulSoup(response.text, 'html.parser')
-        #precio EURO
-        precio_eur = html.find('span', {'data-test':'instrument-price-last'}).get_text()
-        precio_eur = precio_eur.replace(',', '')
-        precio_eur = float(precio_eur)
+        response = requests.request("GET", url, headers=headers, params=query_eur)
+        json_response = response.json()
+        for i in json_response['quoteResponse']['result']:
+            precio_eur = i['regularMarketPrice']
         return precio_eur
+
+print(Monedas_Peticiones.precio_euro())
+print(Monedas_Peticiones.precio_btc())
+print(Monedas_Peticiones.precio_dolar())
