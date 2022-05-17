@@ -1,4 +1,3 @@
-from turtle import width
 import pygal
 from datetime import datetime
 from conexion_insertar import Transacciones
@@ -40,28 +39,3 @@ if __name__ == '__main__':
     graf_eur = grafico_precios('Euro', '\u20ac', fechas_eur, precios_eur, prediccion_euro)
     print(graf_eur)
     
-
-
-
-
-
-#GRAFICANDO CON BOKEH
-'''  
-import numpy as np
-
-from bokeh.layouts import gridplot
-from bokeh.plotting import figure, show
-def datetime(x):
-    return np.array(x, dtype=np.datetime64)
-
-p1 = figure(x_axis_type="datetime", title="Stock Closing Prices")
-p1.grid.grid_line_alpha=0.3
-p1.xaxis.axis_label = 'Date'
-p1.yaxis.axis_label = 'Price'
-
-p1.line(datetime(fechas_usd), prediccion_euro, color='#A6CEE3', legend_label='PREDICCION')
-p1.line(datetime(fechas_usd), precios_eur, color='#B2DF8A', legend_label='PRECIO EURO')
-p1.legend.location = "top_left"
-
-show(gridplot([[p1]], width=800, height=800))  # open a browser
-'''

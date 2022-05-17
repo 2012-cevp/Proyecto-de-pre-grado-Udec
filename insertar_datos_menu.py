@@ -57,10 +57,6 @@ def demora_btc(segundos):
         # le pasamos el parametro None, como tambien se quiere tener la hora para el bitcoin entonces se trae la posición[1] del return que es hora_btc
         insertando_btc = Transacciones.insertar_btc(
             hora(None)[1], btc, prediccion_btc, prediccion_def_sig)
-        print(
-            f'El valor del Bitcoin es: {btc}, la hora es: {hora(None)[1]} y la predicción es: {prediccion_btc}')
-        print(type(btc))
-        print(type(prediccion_btc))
         time.sleep(segundos)
 
 

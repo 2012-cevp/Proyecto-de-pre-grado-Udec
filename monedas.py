@@ -17,7 +17,7 @@ class Monedas_Peticiones():
         response = requests.get(url)
         html = BeautifulSoup(response.text, 'html.parser')
         #Precio del dolar
-        precio_usd = html.find('span', {'data-test':"instrument-price-last"}).text.strip()
+        precio_usd = html.find('span', {'data-test':"instrument-price-last"}).get_text()
         precio_usd = precio_usd.replace(',', '')
         precio_usd = float(precio_usd)
         return precio_usd
@@ -27,7 +27,7 @@ class Monedas_Peticiones():
         response = requests.get(url)
         html = BeautifulSoup(response.text, 'html.parser')
         #precio EURO
-        precio_eur = html.find('span', {'data-test':'instrument-price-last'}).text.strip()
+        precio_eur = html.find('span', {'data-test':'instrument-price-last'}).get_text()
         precio_eur = precio_eur.replace(',', '')
         precio_eur = float(precio_eur)
         return precio_eur

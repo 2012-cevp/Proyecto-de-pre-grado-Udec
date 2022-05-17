@@ -74,5 +74,5 @@ def aboutpro():
 def contactus():
     return render_template('contactus.html')
 
-app.run()
+app.run(port = 5001)
 
