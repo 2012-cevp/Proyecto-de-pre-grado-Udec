@@ -9,12 +9,6 @@ __Descripcion: En este repositorio encontrará el desarrollo de un proyecto para
 
 # Autores ✒️
 
-__Director disciplinar__ 
-
-Gustavo Adolfo Lanza Bayona
-
-__Estudiantes__
-
 Carlos Eduardo Villalba Perdomo 
 
 Oscar David Perilla Domínguez 
