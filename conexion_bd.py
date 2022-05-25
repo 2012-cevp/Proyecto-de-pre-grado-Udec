@@ -4,11 +4,11 @@ import sys
 
 
 class Conexion:
-    _DATABASE = 'btzb0bumkaxwqmou63r7'
-    _USERNAME = 'uyu36smknfyxj2pt'
-    _PASSWORD = 'kSkXRF8ZYho8gdQS0pq'
-    _DB_PORT = '21365'
-    _HOST = 'btzb0bumkaxwqmou63r7-mysql.services.clever-cloud.com'
+    _DATABASE = 'bqifo1pz07m1cxqswphy'
+    _USERNAME = 'uqqvf5c2n9ccrnrv'
+    _PASSWORD = '2dMBMtkM5AiuIEL4udm'
+    _DB_PORT = '21374'
+    _HOST = 'bqifo1pz07m1cxqswphy-mysql.services.clever-cloud.com'
     _MAX_CON = 5
     _pool = None
 

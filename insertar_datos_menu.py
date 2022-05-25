@@ -127,8 +127,8 @@ def demora_eur(segundos):
 
 hilo_hora = threading.Thread(target=hora, args=(3600,))
 hilo_btc = threading.Thread(target=demora_btc, args=(3600,))
-hilo_usd = threading.Thread(target=demora_usd, args=(3900,))
-hilo_eur = threading.Thread(target=demora_eur, args=(3900,))
+hilo_usd = threading.Thread(target=demora_usd, args=(86400,))
+hilo_eur = threading.Thread(target=demora_eur, args=(86450,))
 
 # Iniciando el hilo que queremos ejecutar
 hilo_hora.start()
