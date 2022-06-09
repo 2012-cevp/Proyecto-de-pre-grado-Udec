@@ -46,3 +46,4 @@ class Conexion:
     @classmethod
     def cerrarConexion(cls):
         cls.obtenerPool().closeall()
+        

@@ -6,7 +6,7 @@ query_usd = {"symbols": "USDCOP=X"}
 query_eur = {"symbols":"EURCOP=X"}
 
 
-headers = {'x-api-key': "3murJ8zwSm4D4nklwZRi72y8J9JO7i2771GKsBJY"}
+headers = {'x-api-key': "TfRyNUCEEP4YWm2TcaJAe6kWbw6aqgYe2HtBICpK"}
 
 
 class Monedas_Peticiones():

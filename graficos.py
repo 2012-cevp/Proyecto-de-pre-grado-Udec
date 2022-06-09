@@ -1,5 +1,4 @@
 import pygal
-from datetime import datetime
 from conexion_insertar import Transacciones
 
 def grafico_precios(nombre_moneda, simbolo , fecha, precios, prediccion ):
@@ -24,18 +23,15 @@ def grafico_precios(nombre_moneda, simbolo , fecha, precios, prediccion ):
     #line_chart.render_to_file(f'static/images/{nombre_moneda}.svg')
     
 
-
 if __name__ == '__main__':
-    precios_btc, fechas_btc, prediccion_btc = Transacciones.seleccionar_btc()
+    precios_btc, fechas_btc, prediccion_btc, prediccion_siguiente_btc = Transacciones.seleccionar_btc()
 
-    precios_usd, fechas_usd, prediccion_usd = Transacciones.seleccionar_usd()
+    precios_usd, fechas_usd, prediccion_usd, prediccion_siguiente_usd = Transacciones.seleccionar_usd()
 
-    precios_eur, fechas_eur, prediccion_euro = Transacciones.seleccionar_eur()
+    precios_eur, fechas_eur, prediccion_euro, prediccion_siguiente_usd = Transacciones.seleccionar_eur()
 
     graf_btc = grafico_precios('Bitcoin', '\u20bf', fechas_btc, precios_btc, prediccion_btc)
 
     graf_usd = grafico_precios('Dolar', '\u0024', fechas_usd, precios_usd, prediccion_usd)
 
     graf_eur = grafico_precios('Euro', '\u20ac', fechas_eur, precios_eur, prediccion_euro)
-    print(graf_eur)
-    

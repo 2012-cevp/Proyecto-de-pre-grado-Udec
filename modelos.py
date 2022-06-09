@@ -27,7 +27,7 @@ def modeloDolar():
     modelo_dol = load_model('Modelo_dolar.h5')
     return load_scaler_dol, modelo_dol
 
-
+'''
 if __name__ == '__main__':
     escalador, modelo = modeloDolar()
     valores = Transacciones.seleccionar_usd()[0]
@@ -44,3 +44,4 @@ if __name__ == '__main__':
     prediccion_desescalada = escalador.inverse_transform(prediccion)
     prediccion_def = round(int(prediccion_desescalada),2)
     print(f'El valor predecido es: {prediccion_def}, tipo de dato: {type(prediccion_def)}')
+    '''
